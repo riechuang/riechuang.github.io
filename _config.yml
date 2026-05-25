@@ -1,5 +1,5 @@
-title: "Shakked Noy"
-author: "Shakked Noy"
+title: "Valerie Chuang"
+author: "Valerie Chuang"
 description: "Massachusetts Institute of Technology"
 permalink: /:title/
 lang: "en"
@@ -19,9 +19,7 @@ navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {url: "/cv.pdf", title: "CV"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:snoy@mit.edu"}
-  - {title: Github, icon: github, url: "https://github.com/shakkednoy"}
-  - {title: Twitter, icon: twitter, url: "https://twitter.com/shakked_noy"}
+  - {title: Mail, icon: envelope, url: "mailto:rie@mit.edu"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/
