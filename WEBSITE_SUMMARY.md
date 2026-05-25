@@ -1,7 +1,7 @@
-# Academic Website Summary: Shakked Noy
+# Academic Website Summary: Valerie Chuang
 
 ## Overview
-This is the personal academic website for Shakked Noy, a third-year PhD student in Economics at MIT. The website is built using Jekyll and hosted on GitHub Pages at `shakkednoy.github.io`.
+This is the personal academic website for Valerie Chuang, a PhD student in Economics at MIT. The website is built using Jekyll and hosted on GitHub Pages at `riechuang.github.io`.
 
 ## Technical Architecture
 

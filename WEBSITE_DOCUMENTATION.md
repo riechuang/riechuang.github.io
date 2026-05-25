@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a personal academic website for Shakked Noy, built using a hybrid approach combining Jekyll configuration with modern HTML/CSS/JavaScript. The site displays research papers, publications, and personal information in a clean, academic format.
+This is a personal academic website for Valerie Chuang, built using a hybrid approach combining Jekyll configuration with modern HTML/CSS/JavaScript. The site displays research papers, publications, and personal information in a clean, academic format.
 
 ## Site Architecture
 
