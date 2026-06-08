@@ -96,19 +96,16 @@ function populatePapers(jsonList, containerID, addPeriodBeforeDate) {
       dateWithItalics = dateWithItalics.replace(/In ([^,]+),/, 'In <em>$1</em>,');
     }
     
-    html += `<br>${dateWithItalics}`;
+    html += `<br><span style="color: slategray;">${dateWithItalics}</span>`;
     
     if (paper.appendedText) {
       html += ` ${paper.appendedText}`;
     }
     
-    const abstractId = `ab-${paper.title.replace(/\s+/g, '-').replace(/[^\w-]/g, '').toLowerCase()}`;
-    
     html += `
       <ul style="position: relative; left: -40px;">
-        <a onclick="toggleAbstract('${abstractId}')" class="graylinks abstract-toggle">${plusIcon} Abstract</a>
         ${extraLinksHTML}
-        <p id="${abstractId}" class="abstract-hide">
+        <p class="abstract-show" style="margin-left: 0;">
           ${paper.abstract}
         </p>
       </ul>
@@ -151,16 +148,6 @@ document.addEventListener("DOMContentLoaded", function() {
     })
     .catch(error => {
       console.error("Fetch error for working-papers.json:", error);
-      // Fallback content if JSON fails to load
-      const fallbackElement = document.getElementById('papersList');
-      if (fallbackElement) {
-        fallbackElement.innerHTML = `
-          <div style="margin-bottom: 1rem;">
-            <a href="LiT.pdf">Lost in Transmission</a> (with <a href="https://www.thomasgraeber.com/">Thomas Graeber</a> and <a href="https://sites.google.com/site/chrisrotheconomics/">Chris Roth</a>)<br/>
-            Last updated: November 2024
-          </div>
-        `;
-      }
     });
 
   // Load publications
